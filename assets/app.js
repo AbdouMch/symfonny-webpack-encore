@@ -10,5 +10,7 @@ import './styles/app.css';
 
 // start the Stimulus application
 import './bootstrap';
+import getNiceMessage  from './scripts/get_nice_message';
 
 console.log("hello world!")
+console.log(getNiceMessage(0));
