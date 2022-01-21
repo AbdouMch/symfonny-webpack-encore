@@ -1,3 +1,7 @@
+import '../styles/article_show.scss';
+
+import $ from 'jquery';
+
 $(document).ready(function() {
     $('.js-like-article').on('click', function(e) {
         e.preventDefault();

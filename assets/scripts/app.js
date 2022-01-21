@@ -6,12 +6,12 @@
  */
 
 // any CSS you import will output into a single css file (app.scss in this case)
-import './styles/app.scss';
+import '../styles/app.scss';
 
 
 // start the Stimulus application
-import './bootstrap';
-import getNiceMessage  from './scripts/get_nice_message';
+import '../bootstrap';
+import getNiceMessage  from './components/get_nice_message';
 
 import $ from 'jquery';
 import 'bootstrap';
