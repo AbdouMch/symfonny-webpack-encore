@@ -28,6 +28,6 @@
         "build": "encore production --progress"
     },
     "browserslist": [
-        "> 5%"
+        "> .05%"
     ]
 }
