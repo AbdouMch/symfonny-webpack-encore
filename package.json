@@ -2,8 +2,10 @@
     "devDependencies": {
         "@symfony/stimulus-bridge": "^2.0.0",
         "@symfony/webpack-encore": "^1.0.0",
+        "autocomplete.js": "^0.38.1",
         "bootstrap": "4.0",
         "core-js": "^3.0.0",
+        "dropzone": "5.5.1",
         "file-loader": "6.0.0",
         "font-awesome": "^4.7.0",
         "jquery": "^3.6.0",
@@ -11,6 +13,7 @@
         "regenerator-runtime": "^0.13.2",
         "sass": "^1.49.0",
         "sass-loader": "12.0.0",
+        "sortablejs": "1.8.3",
         "stimulus": "^2.0.0",
         "webpack-notifier": "^1.6.0"
     },
