@@ -5,14 +5,16 @@ import Sortable from 'sortablejs';
 
 Dropzone.autoDiscover = false;
 
+async function initializeAutocomplete($autocomplete) {
+    const { default: autocomplete} = await import('./components/algolia-autocomplete');
+
+    autocomplete($autocomplete, 'users', 'email');
+}
+
 $(document).ready(function() {
     const $autocomplete = $('.js-user-autocomplete');
     if(!$autocomplete.is(':disabled')) {
-        // start loading a waiting animation
-        import('./components/algolia-autocomplete').then((autocomplete) => {
-            // stop loading the waiting animation
-            autocomplete.default($autocomplete, 'users', 'email');
-        })
+        initializeAutocomplete($autocomplete);
     }
 
     const $referenceList = $('.js-reference-list');
